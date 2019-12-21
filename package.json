@@ -1,0 +1,27 @@
+{
+  "name": "cordova_plugin_giaes",
+  "version": "0.0.1",
+  "description": "Cordova plugin for AES Encryption",
+  "cordova": {
+    "id": "cordova_plugin_giaes",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Robin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gihosp/cordova_plugin_giaes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gihosp/cordova_plugin_giaes/issues"
+  },
+  "homepage": "https://github.com/gihosp/cordova_plugin_giaes#readme"
+}

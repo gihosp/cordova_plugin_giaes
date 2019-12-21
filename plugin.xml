@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova_plugin_giaes" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>cordova_plugin_giaes</name>
+<js-module name="cordova_plugin_giaes" src="www/cordova_plugin_giaes.js">
+<clobbers target="cordova.plugins.cordova_plugin_giaes" />
+</js-module>
+
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="cordova_plugin_giaes"><param name="android-package" value="cordova_plugin_giaes.cordova_plugin_giaes" /></feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml" />
+<source-file src="src/android/cordova_plugin_giaes.java" target-dir="src/cordova_plugin_giaes/cordova_plugin_giaes" />
+<source-file src="src/android/AES.java" target-dir="src/cordova_plugin_giaes/cordova_plugin_giaes" />
+</platform>
+
+<platform name="ios">
+<config-file parent="/*" target="config.xml">
+<feature name="cordova_plugin_giaes"><param name="ios-package" value="cordova_plugin_giaes" /></feature>
+</config-file>
+<source-file src="src/ios/cordova_plugin_giaes.m" />
+<header-file src="src/ios/AESCipher.h" />
+<source-file src="src/ios/AESCipher.m" />
+</platform>
+</plugin>
